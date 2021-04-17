@@ -23,12 +23,13 @@ In the project dir run
 
 ### Step 4 - Add HasApiTokens at app/User.php
 
-`use Laravel\Sanctum\HasApiTokens;`
+```use Laravel\Sanctum\HasApiTokens;
 
-`class User extends Authenticatable`
-`{`
-    `use HasApiTokens, HasFactory, Notifiable;`
-`}`
+class User extends Authenticatable
+{
+    use HasApiTokens, HasFactory, Notifiable;
+}
+````
 
 ## References
 - [Laravel docs](https://laravel.com/docs/8.x) - Laravel Documentation
