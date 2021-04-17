@@ -13,17 +13,21 @@ The project in this repostory contains all the steps finalized
 ### Step 1 - Add Laravel Sancutum to composer.json
 In the project dir run
 
-`composer require laravel/sanctum`
+> `composer require laravel/sanctum`
+
 
 ### Step 2 - You should publish the Sanctum configuration and migration files using the vendor:publish Artisan command. 
-`php artisan vendor:publish --provider="Laravel\Sanctum\SanctumServiceProvider"`
+
+> `php artisan vendor:publish --provider="Laravel\Sanctum\SanctumServiceProvider"`
 
 ### Step 3 - Run migrations
-`php artisan migrate`
+
+> `php artisan migrate`
+
 
 ### Step 4 - Add HasApiTokens at app/User.php
 
-```use Laravel\Sanctum\HasApiTokens;
+> ```use Laravel\Sanctum\HasApiTokens;
 
 class User extends Authenticatable
 {
